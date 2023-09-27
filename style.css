@@ -1,0 +1,81 @@
+
+body{
+    margin: 0px;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.calculator_container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.calculadora{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(95, 88, 116);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.833);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.Display{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.766);
+    margin-top: 10px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#display{
+    color: aliceblue;
+    font-size: 26px;
+}
+
+
+.botoes_container{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.botao-numero{
+    margin: 10px;
+    -webkit-margin-collapse: separate;
+    border-color: black;
+    padding: 5px;
+    font-size: 27px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.545);
+}
+
+.botao-operador{
+    margin: 10px;
+    -webkit-margin-collapse: collapse;
+    color: white;
+    padding: 5px;
+    font-size: 30px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.545);
+}
+
+.botao-igual{
+    margin: 10px;
+    color: black;
+    padding: 5px;
+    font-size: 30px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.545);
+}
