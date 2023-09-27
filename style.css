@@ -22,7 +22,7 @@ body{
 
 .calculadora{
     width: 300px;
-    height: 300px;
+    height: 410px;
     background-color: rgb(95, 88, 116);
     box-sizing: border-box;
     box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.833);
@@ -33,9 +33,10 @@ body{
 .Display{
     display: flex;
     background-color: rgba(0, 0, 0, 0.766);
-    margin-top: 10px;
+    margin-top: 5px;
     justify-content: center;
     padding: 20px;
+    box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.833);
     border-radius: 20px;
 }
 
@@ -49,33 +50,53 @@ body{
     display: flex;
     background-color: rgba(0, 0, 0, 0.349);
     border-radius: 20px;
+    box-shadow: 5px 0px 5px rgba(30, 30, 30, 0.833);
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .botao-numero{
-    margin: 10px;
+    margin: 5px;
     -webkit-margin-collapse: separate;
+    border-radius: 10px;
     border-color: black;
-    padding: 5px;
+    padding: 10px;
     font-size: 27px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.545);
+    box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.833);
+    transition: background-color 0.5s ease;
+}
+
+.botao-operador:hover{
+    background-color: aliceblue;
+    color: black;
 }
 
 .botao-operador{
-    margin: 10px;
+    margin: 5px;
     -webkit-margin-collapse: collapse;
     color: white;
-    padding: 5px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.484);
+    border-radius: 10px;
     font-size: 30px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.545);
+    box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.833);
+    transition: background-color 0.5s ease;
 }
 
 .botao-igual{
-    margin: 10px;
+    margin: 5px;
     color: black;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 10px;
     font-size: 30px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.545);
+    transition: background-color 0.5s ease;
+}
+
+.botao-numero:hover, .botao-igual:hover{
+    background-color: rgba(55, 46, 68, 0.637);
+    color: aliceblue;
 }
