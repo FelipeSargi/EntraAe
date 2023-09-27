@@ -1,29 +1,33 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Croissant+One&family=Space+Mono:ital,wght@1,700&family=Ubuntu:wght@500&display=swap');
+
 body{
     margin: 0px;
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(68, 68, 68),rgb(0, 0, 0))
 }
 
-#titulo{
+#title{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    color: aliceblue;
+    font-family: 'Croissant One', cursive;
+    font-size-adjust: inherit;
 }
 
-.calculator_container{
+.container{
     display: flex;
     width: 100vw;
     height: 100vh;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
 }
 
-.calculadora{
+.calculator{
     width: 300px;
     height: 410px;
-    background-color: rgb(95, 88, 116);
+    background-color: rgb(63, 63, 63);
     box-sizing: border-box;
     box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.833);
     border-radius: 20px;
@@ -32,21 +36,25 @@ body{
 
 .Display{
     display: flex;
+    height: 30px;
     background-color: rgba(0, 0, 0, 0.766);
     margin-top: 5px;
     justify-content: center;
+    align-content: baseline;
     padding: 20px;
     box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.833);
     border-radius: 20px;
 }
 
 #display{
+    
+    width: auto;
+    max-width: 270px;
     color: aliceblue;
     font-size: 26px;
 }
 
-
-.botoes_container{
+.button_container{
     display: flex;
     background-color: rgba(0, 0, 0, 0.349);
     border-radius: 20px;
@@ -56,7 +64,7 @@ body{
     margin-top: 10px;
 }
 
-.botao-numero{
+.btn-number{
     margin: 5px;
     -webkit-margin-collapse: separate;
     border-radius: 10px;
@@ -68,12 +76,12 @@ body{
     transition: background-color 0.5s ease;
 }
 
-.botao-operador:hover{
+.btn-operator:hover{
     background-color: aliceblue;
     color: black;
 }
 
-.botao-operador{
+.btn-operator{
     margin: 5px;
     -webkit-margin-collapse: collapse;
     color: white;
@@ -86,7 +94,7 @@ body{
     transition: background-color 0.5s ease;
 }
 
-.botao-igual{
+.btn-equal{
     margin: 5px;
     color: black;
     padding: 10px;
@@ -96,7 +104,7 @@ body{
     transition: background-color 0.5s ease;
 }
 
-.botao-numero:hover, .botao-igual:hover{
+.btn-number:hover, .btn-equal:hover{
     background-color: rgba(55, 46, 68, 0.637);
     color: aliceblue;
 }
