@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BOTA A SENHA DO CARTAO</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico">   
+</head>
+<body>
+    <script src="script.js"></script>
+    <main id="container_box">
+        <h1 id="login_menssage">login</h1>
+        
+        <div class="box_inputs" id="inputs">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="example@gmail.com">
+            <br>
+            <label for="myPassword">Senha:</label>
+            <input type="password" id="myPassword"/>
+            <img src="imagens/olhofechado.png" onclick="mostraSenha();" id="olho" class="olho"/>
+            </input>
+            <br>
+            <button type="submit" id="login_button" onclick="verifyEmail()">Entrar</button>
+            <button type="reset" id="reset_button" onclick="limpaDiv()">Limpar</button>
+            
+        </div>
+        <div id="display_verify"></div>
+    </main>
+   
+</body>
+</html>
