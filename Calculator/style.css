@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Croissant+One&family=Space+Mono:ital,wght@1,700&family=Ubuntu:wght@500&display=swap');
+
+body{
+    margin: 0px;
+    background-image: linear-gradient(rgb(93, 0, 255),rgb(54, 39, 88),rgb(0, 0, 0))
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Croissant One', cursive;
+    font-size-adjust: inherit;
+    border: solid;
+    border-color: rgba(240, 248, 255, 0.614);
+    border-radius: 10px;
+    padding: 4px;
+    background-image: linear-gradient(rgb(93, 0, 255),rgb(54, 39, 88),rgb(0, 0, 0));
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.497);
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    width: 300px;
+    height: 410px;
+    background-color: rgb(63, 63, 63);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 6px rgba(30, 30, 30, 0.833);
+    border-radius: 20px;
+    border: 5px 5px;
+    padding: 10px;
+}
+
+.Display{
+    display: flex;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.766);
+    margin-top: 5px;
+    justify-content: center;
+    align-content: baseline;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.833);
+    border-radius: 20px;
+}
+
+#display{
+    display: flex;
+    width: auto;
+    height: 30px;
+    max-width: 270px;
+    color: aliceblue;
+    font-size: 26px;
+}
+
+.button_container{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.833);
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: 4px 4px black;
+}
+
+.btn-number{
+    margin: 5px;
+    -webkit-margin-collapse: separate;
+    border-radius: 10px;
+    border-color: black;
+    padding: 10px;
+    font-size: 27px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.545);
+    box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.833);
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+.btn-operator:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.btn-operator{
+    margin: 5px;
+    -webkit-margin-collapse: collapse;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.484);
+    border-radius: 10px;
+    font-size: 30px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.545);
+    box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.833);
+    transition: background-color 0.5s ease;
+}
+
+.btn-equal{
+    margin: 5px;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.545);
+    transition: background-color 0.5s ease;
+}
+
+.btn-number:hover, .btn-equal:hover{
+    background-color: rgba(55, 46, 68, 0.637);
+    color: aliceblue;
+}
